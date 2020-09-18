@@ -59,8 +59,15 @@ namespace CalculatorWPF
         private void DivideNumbers(object sender, RoutedEventArgs e)
         {
             ConvertToDouble();
-            totalNumber = Calculator.StaticCalculator.Divide(num1, num2);
-            result.Content = totalNumber;
+            try
+            {
+                totalNumber = Calculator.StaticCalculator.Divide(num1, num2);
+                result.Content = totalNumber;
+            }
+            catch(DivideByZeroException a) 
+            {
+                result.Content = "Can't divide by zero";
+            }
         }
 
         private void ModulusNumbers(object sender, RoutedEventArgs e)

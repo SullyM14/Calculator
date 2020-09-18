@@ -36,15 +36,12 @@ namespace Calculator
         }
         public static double Divide(double x, double y)
         {
-            try
-            {
+                if (x == 0 || y == 0)
+                {
+                    throw new DivideByZeroException();
+                }
                 double answer = x / y;
                 return answer;
-            }
-            catch(Exception e)
-            {
-                return 0; ;
-            }
         }
         public static double Modulus(double x, double y)
         {
