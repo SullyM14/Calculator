@@ -11,10 +11,10 @@
         <TextBox VerticalContentAlignment="Center" TextAlignment="Center" Name="numberA" Margin="113,109,583,261">00</TextBox>
         <TextBox VerticalContentAlignment="Center" TextAlignment="Center" Name="numberB" Margin="113,207,583,149">00</TextBox>
         <Button Margin="290,124,423,255" Click="AddingNumbers">Add</Button>
-        <Button Margin="416,124,292,255" Click="SubtractNumbers">Subtract</Button>
-        <Button Margin="290,217,423,158" Click="MultiplyNumbers">Multiply</Button>
-        <Button Margin="416,217,292,158" Click="DivideNumbers">Divide</Button>
-        <Button Margin="356,298,356,77"  Click="ModulusNumbers">Modulus</Button>
+        <Button Margin="400,124,308,255" Click="SubtractNumbers">Subtract</Button>
+        <Button Margin="290,207,423,168" Click="MultiplyNumbers">Multiply</Button>
+        <Button Margin="400,207,308,168" Click="DivideNumbers">Divide</Button>
+        <Button Margin="511,124,201,255"  Click="ModulusNumbers">Modulus</Button>
         <Label VerticalAlignment="Bottom" FontSize="32" HorizontalAlignment="Left" Margin="267,0,0,0">Answer</Label>
 
         <Label Name="result" VerticalAlignment="Bottom" FontSize="32" HorizontalAlignment="Left" Margin="438,0,0,0" Width="362">00</Label>
